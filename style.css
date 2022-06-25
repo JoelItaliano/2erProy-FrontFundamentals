@@ -1,11 +1,12 @@
 *{margin: 0; padding: 0; border: none;}
-
+/*Propiedades al cuerpo de la pag*/
 main{
     width: 100vw;
     height: 100vh;
 
     font-family: 'Roboto', Arial, sans-serif;
 }
+/*prop al header, que contiene la barra de nav + iconos, se divide en tres contenedores*/
 header{
     position: fixed;
     right: 0;
@@ -20,43 +21,49 @@ header{
    
     color: #fff;
 }
-
+/*porpiedades a cada contenedor*/
 header div{
     display: flex;
     align-items: center;
     position: relative;
 }
+/*1er div logo de la pag*/
 header img{
-    width: 130px;
-    height: 70%;   
+    width: 110px;
+    height: 65%;
+    margin-left: 10px;   
     
 }
+/* 2 div contenedor de la barra de busqueda sin foco*/
 .search{
     font-size: 16px;
     background-color:  rgb(54, 54, 54);
-    width: 81%;
+    width: 75%;
     height: 70%;
     
-
+    margin-left: 6%;
     border-radius: 4px;
     z-index: 9
 }
-
-#lupa_oculta, #lupa{
+/*lupa que aparece cuando es selec la barra de busqueda*/
+#lupa_oculta{
     margin: 10px;
    font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 200,
-    'opsz' 48
+    'opsz' 48;
+    display: none;
 }
-
+/*div que contiene la barra de busqueda, con prop por defecto*/
 .search_visible{
     padding-left: 5px;
     font-size: 17px;
     
+
+
     width: 100%;
-    height: 100%;
+    height: 98%;
     outline: none;
 
     color: rgb(255, 255, 255);
@@ -64,24 +71,26 @@ header img{
     background-color: rgb(17, 17, 17);
     border: none;
 }
-
+/*porpiedades que se agregan al input cuando esta seleccionado*/
 .input_Hidden{    
     font-size: 17px;    
     
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0) !important;
     border-radius: 4px;
     border: solid 0.5px rgb(0, 128, 233);
     font-size: 17px;
 }
-
-#lupa{
-    margin-left: 20px;    
+/*lupa de la derecha de la barar*/
+#lupa{ 
+    padding: 0 17px; 
+    font-size: 25px;
+    font-variation-settings: 
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 300,
+    'opsz' 100;  
 }
-
-.search :hover {
-    display: flex;
-}
-
+/*prop a los div que contienen el microf y el usuario(ultimo icon derecha)*/
 .micro, .user{
     width: 40px;
     height: 70%;
@@ -94,12 +103,12 @@ header img{
     display: flex;
     justify-content: center;
 }
-
+/*propiedades al microfono*/
 #micro{
     font-variation-settings:
     'FILL' 1;
 }
-
+/* 3 div propiedades a los iconos de las barra de busqueda*/
 .funciones{
     display: flex;
     justify-content: right;
@@ -112,6 +121,6 @@ header img{
 .user{
     background-color: rgb(143, 55, 165);
 }
-
+/*                FIN DE HEADER            */
 
 
