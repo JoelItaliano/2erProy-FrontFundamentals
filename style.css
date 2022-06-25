@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;}
+*{margin: 0; padding: 0; border: none;}
 
 main{
     width: 100vw;
@@ -31,19 +31,15 @@ header img{
     height: 70%;   
     
 }
-
-.search_hidden{
+.search{
     font-size: 16px;
-    width: 73%;
+    background-color:  rgb(54, 54, 54);
+    width: 81%;
     height: 70%;
-    background-color: rgb(0, 0, 0);
+    
 
-    border: solid 0.5px rgb(0, 128, 233);
-
-    position: absolute;
-
-    display: none;
-    z-index: 10;
+    border-radius: 4px;
+    z-index: 9
 }
 
 #lupa_oculta, #lupa{
@@ -55,35 +51,27 @@ header img{
     'opsz' 48
 }
 
-.search_hidden input{    
-    width: 100%;
-    height: 75%;
-
-    background-color: rgb(0, 0, 0);
-    border: none;
-
-    font-size: 17px;
-}
-
-.search{
-    background-color:  rgb(54, 54, 54);
-    width: 75%;
-    height: 70%;
-    margin-left:48px ;
-
-    border-radius: 4px;
-    z-index: 9
-}
-
-.search input{
+.search_visible{
     padding-left: 5px;
     font-size: 17px;
-
-    width: 90%;
+    
+    width: 100%;
     height: 100%;
+    outline: none;
+
+    color: rgb(255, 255, 255);
 
     background-color: rgb(17, 17, 17);
     border: none;
+}
+
+.input_Hidden{    
+    font-size: 17px;    
+    
+    background-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border: solid 0.5px rgb(0, 128, 233);
+    font-size: 17px;
 }
 
 #lupa{
