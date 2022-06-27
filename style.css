@@ -1,5 +1,29 @@
-*{margin: 0; padding: 0; border: none;}
+*{margin: 0; padding: 0; border: none; color: #fff;}
 /*Propiedades al cuerpo de la pag*/
+
+/*Barra de desplazamiento*/
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  rgb(36, 33, 33);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+    
+  }
+  
+  *::-webkit-scrollbar-track {
+    background:  rgb(36, 33, 33) ;
+  }
+
+  *:hover::-webkit-scrollbar-thumb {
+    background-color: rgb(78, 78, 78);
+    border-radius: 20px;
+    border: 3px solid rgb(78, 78, 78);
+  }
+
 main{
     width: 100vw;
     height: 100vh;
@@ -11,15 +35,13 @@ header{
     position: fixed;
     right: 0;
 
-    width: 97%;
+    width: 96%;
     height: 55px;
 
     background-color: rgb(36, 33, 33);
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
 
-   
-    color: #fff;
 }
 /*porpiedades a cada contenedor*/
 header div{
@@ -65,8 +87,6 @@ header img{
     width: 100%;
     height: 98%;
     outline: none;
-
-    color: rgb(255, 255, 255);
 
     background-color: rgb(17, 17, 17);
     border: none;
@@ -122,5 +142,208 @@ header img{
     background-color: rgb(143, 55, 165);
 }
 /*                FIN DE HEADER            */
+/*           BARRA NAV LATERAL          */
 
+/*Estilos de la barra lateral*/
+.nav_lateral{
+    width: 4%;
+    height: 100vh;
+
+    font-size: 10px;
+
+    background-color: rgb(36, 33, 33);
+    position: fixed;
+}
+
+.nav_lateral div{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.nav_icon_hidden{
+    height: 100vh;
+    display: none;
+}
+.nav_icon_hidden div{
+    padding: 20px 0;
+}
+
+.nav_icon_hidden div:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+.nav_icon_expand{
+    width: 240px;
+    height: 98vh;
+    background-color: rgb(36, 33, 33);
+    
+    position: relative;
+    left: 0;
+    top: -1px;    
+}
+
+/*estilo al menu hamburgesa*/
+.menu_nav{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 200,
+    'opsz' 48;      
+  }
+
+  .cont_menu{
+    cursor: pointer;
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(36, 33, 33);
+  }
+
+  .cont_menu:active{
+    background-color: rgb(54, 54, 54);
+
+    border: 1px solid rgb(68, 67, 67);
+  }
+
+  /*estilos a los iconos de nav*/
+  .home, #ico_home{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 48
+  }
+
+.explorar,#ico_expl{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' -25,
+  'opsz' 48
+}
+
+ .suscripciones,#ico_susbc{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' -25,
+  'opsz' 48
+}
+
+.biblioteca,#ico_biblioteca{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' -25,
+  'opsz' 48
+}
+
+.nav_icon_expand_seg_secc .material-symbols-outlined{
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' -25,
+  'opsz' 48
+}
+.nav_icon_expand_terc_secc .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' -25,
+    'opsz' 48
+}
+.nav_icon_expand_quinta_secc .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' -25,
+    'opsz' 48
+}
+
+
+/*estilo a la barra de navegacion lateral*/
+.nav_icon_expand{
+    overflow: auto;    
+}
+
+/*linea de la barra de nav*/
+.nav_icon_expand hr{
+    width: 100%;
+    margin: 20px 0;
+    border: 0.05px solid #fff;
+}
+
+/*titulos de la barra de nav lateral*/
+.nav_icon_expand h2{
+    font-size: 14px;  
+    color:  rgb(153, 152, 152);
+    margin-left: 22px;
+    margin-bottom: 10px;
+}
+/*estilo a las lista de la barra de nav*/
+.nav_icon_expand ul li{
+    font-size: 15px;  
+    padding: 8px 27px;   
+    
+    display: flex;
+    align-items: center;
+}
+.nav_icon_expand ul li:hover{
+    cursor: pointer;
+    background-color: rgb(54, 54, 54);
+}
+
+.nav_icon_expand_primer_secc ul li:first-child{
+    background-color: rgb(54, 54, 54);;
+}
+/*Estilos a los link de la barra de nav*/
+.nav_icon_expand ul li a{
+    text-decoration: none;
+  
+    margin-left: 23px;
+}
+/*estilo a las dif img que representan los iconos que no se encontraron*/
+.ico_img{
+    width: 24px;
+
+}
+.ico_img img {
+    position: relative;
+
+}
+#img_short{
+    width: 130%;
+    left: -5px;    
+}
+#img_peli{
+    width: 150%;
+    left: -6px
+}
+#img_game{
+    width: 170%;
+    left: -10px;
+}
+#img_copa{
+    width: 150%;
+    left: -6px;
+}
+#img_sugerencia{
+    width: 160%;
+    left: -6px;
+    top: 3px;
+} 
+/*Pie de pagina en la barra lateral desplegable*/
+p{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(153, 152, 152);
+    line-height: 1.5;
+    padding: 0 25px;
+}
+
+.derech_autor{
+    font-size: 14px;
+    margin: 0 0 25px 0;
+    font-weight: 100;
+}
 
