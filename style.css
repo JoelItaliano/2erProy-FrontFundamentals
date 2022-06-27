@@ -146,7 +146,7 @@ header img{
 
 /*Estilos de la barra lateral*/
 .nav_lateral{
-    width: 4%;
+    width: 70px;
     height: 100vh;
 
     font-size: 10px;
@@ -154,6 +154,28 @@ header img{
     background-color: rgb(36, 33, 33);
     position: fixed;
 }
+/*estilo al menu hamburgesa*/
+.menu_nav{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 200,
+    'opsz' 48;      
+  }
+
+  .cont_menu{
+    cursor: pointer;
+    padding: 15px 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(36, 33, 33);
+  }
+
+  .cont_menu:active{
+    
+    background-color: rgb(54, 54, 54);
+
+    border: 1px solid rgb(68, 67, 67);
+  }
 
 .nav_lateral div{    
     display: flex;
@@ -172,7 +194,13 @@ header img{
 .nav_icon_hidden div:hover{
     background-color: rgb(54, 54, 54);
 }
+.nav_icon_hidden div p{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 100;
+}
 
+/*estilo a la barra de navegacion lateral*/
 .nav_icon_expand{
     width: 240px;
     height: 98vh;
@@ -181,29 +209,54 @@ header img{
     position: relative;
     left: 0;
     top: -1px;    
+
+    overflow: auto;
+    display: inherit;
 }
 
-/*estilo al menu hamburgesa*/
-.menu_nav{
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 100,
-    'GRAD' 200,
-    'opsz' 48;      
-  }
+/*linea de la barra de nav*/
+.nav_icon_expand hr{
+    width: 100%;
+    margin: 20px 0;
+    border: 0.05px solid #fff;
+}
 
-  .cont_menu{
+/*titulos de la barra de nav lateral*/
+.nav_icon_expand h2{
+    font-size: 14px;  
+    color:  rgb(153, 152, 152);
+    margin-left: 22px;
+    margin-bottom: 10px;
+}
+
+/*estilo a las lista de la barra de nav*/
+.nav_icon_expand ul li{
+    font-size: 15px;  
+    padding: 8px 27px;   
+    
+    display: flex;
+    align-items: center;
+}
+.nav_icon_expand ul li:hover{
     cursor: pointer;
-    padding: 15px 15px;
-    border-radius: 50%;
-    border: 1px solid rgb(36, 33, 33);
-  }
-
-  .cont_menu:active{
     background-color: rgb(54, 54, 54);
+}
 
-    border: 1px solid rgb(68, 67, 67);
-  }
+.nav_icon_expand_primer_secc ul li:first-child{
+    background-color: rgb(54, 54, 54);;
+}
+
+/*Estilos a los link de la barra de nav*/
+.nav_icon_expand ul li a{
+    text-decoration: none;
+  
+    margin-left: 23px;
+}
+
+/*seccion oculta de la baarra de nav*/
+.nav_icon_expand_seg_secc_oculto{
+    display: none ;
+}
 
   /*estilos a los iconos de nav*/
   .home, #ico_home{
@@ -245,12 +298,11 @@ header img{
   'GRAD' -25,
   'opsz' 48
 }
-.nav_icon_expand_terc_secc .material-symbols-outlined{
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' -25,
-    'opsz' 48
+.nav_icon_expand_terc_secc div{
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(153, 152, 152);
 }
 .nav_icon_expand_quinta_secc .material-symbols-outlined{
     font-variation-settings:
@@ -258,49 +310,6 @@ header img{
     'wght' 200,
     'GRAD' -25,
     'opsz' 48
-}
-
-
-/*estilo a la barra de navegacion lateral*/
-.nav_icon_expand{
-    overflow: auto;    
-}
-
-/*linea de la barra de nav*/
-.nav_icon_expand hr{
-    width: 100%;
-    margin: 20px 0;
-    border: 0.05px solid #fff;
-}
-
-/*titulos de la barra de nav lateral*/
-.nav_icon_expand h2{
-    font-size: 14px;  
-    color:  rgb(153, 152, 152);
-    margin-left: 22px;
-    margin-bottom: 10px;
-}
-/*estilo a las lista de la barra de nav*/
-.nav_icon_expand ul li{
-    font-size: 15px;  
-    padding: 8px 27px;   
-    
-    display: flex;
-    align-items: center;
-}
-.nav_icon_expand ul li:hover{
-    cursor: pointer;
-    background-color: rgb(54, 54, 54);
-}
-
-.nav_icon_expand_primer_secc ul li:first-child{
-    background-color: rgb(54, 54, 54);;
-}
-/*Estilos a los link de la barra de nav*/
-.nav_icon_expand ul li a{
-    text-decoration: none;
-  
-    margin-left: 23px;
 }
 /*estilo a las dif img que representan los iconos que no se encontraron*/
 .ico_img{
@@ -332,6 +341,7 @@ header img{
     left: -6px;
     top: 3px;
 } 
+
 /*Pie de pagina en la barra lateral desplegable*/
 p{
     font-size: 14px;
@@ -346,4 +356,5 @@ p{
     margin: 0 0 25px 0;
     font-weight: 100;
 }
+
 

@@ -59,13 +59,13 @@
 
         <section class="nav_lateral">
             <nav>
-              <div class="menu_nav">
+              <div class="menu_nav" id="ico_menu_lat">
                 <div class="cont_menu">
                   <span class="material-symbols-outlined">menu</span>
                 </div>
               </div>
 
-            <section class="nav_icon_hidden" id="nav_contraido">
+            <section class="nav_icon_hidden" id="nav_oculto">
 
               <div class="home">
                 <span class="material-symbols-outlined">home</span>
@@ -94,7 +94,7 @@
 
             </section>
 
-            <section class="nav_icon_expand">
+            <section class="nav_icon_expand" id="nav_show">
 
               <article class="nav_icon_expand_primer_secc">
                 <ul>
@@ -112,20 +112,30 @@
                   <li><span class="material-symbols-outlined">smart_display</span><a href="">Mis vídeos</a></li>
                   <li><span class="material-symbols-outlined">schedule</span><a href="">Ver más tarde</a></li>
                   <li><span class="material-symbols-outlined">thumb_up</span><a href="">Vídeos que me gustan</a></li>
-                  <li><span class="material-symbols-outlined">keyboard_arrow_down</span><a href="">Mostrar más</a></li>
+                  <li id="nav_icon_seg_secc_mostrar_secc_oculta" onclick=mostrarSecOcultaNav()><span class="material-symbols-outlined">keyboard_arrow_down</span><a onclick=mostrarSecOcultaNav()>Mostrar más</a></li>
                 </ul>
+                <article class="nav_icon_expand_seg_secc_oculto" id="nav_icon_expand_seg_secc_oculto">
+                  <ul>
+                  <li><span class="material-symbols-outlined">playlist_play</span><a>Pagina 1</a></li>
+                  <li><span class="material-symbols-outlined">playlist_play</span><a>Pagina 2</a></li>
+                  <li><span class="material-symbols-outlined">playlist_play</span><a>Pagina 3</a></li>
+                  <li><span class="material-symbols-outlined">playlist_play</span><a>Pagina 4</a></li>
+                  <li><span class="material-symbols-outlined">playlist_play</span><a>Pagina 5</a></li>
+                  <li><span class="material-symbols-outlined" onclick=ocultarSeccNav()>expand_less</span><a onclick=ocultarSeccNav()>Mostrar Menos</a></li>
+                    </ul>
+                </article>
               </article>
               <hr>
               <article class="nav_icon_expand_terc_secc">
                 <h2>SUSCRIPCIONES</h2>
                 <ul>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 1</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 2</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 3</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 4</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 5</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 6</a></li>
-                  <li><span class="material-symbols-outlined">mode_standby</span><a href="">Suscripcion 7</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 1</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 2</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 3</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 4</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 5</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 6</a></li>
+                  <li><div class="suscrip"></div><a href="">Suscripcion 7</a></li>
                 </ul>
               </article>
               <hr>
