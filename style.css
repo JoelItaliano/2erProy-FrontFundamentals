@@ -77,6 +77,11 @@ header img{
     'opsz' 48;
     display: none;
 }
+
+/*lupa que se encuentra cuando esta en pantallas chicas*/
+#lupa_phone{
+    display: none;
+}
 /*div que contiene la barra de busqueda, con prop por defecto*/
 .search_visible{
     padding-left: 5px;
